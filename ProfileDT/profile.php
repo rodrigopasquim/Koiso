@@ -47,186 +47,228 @@ $mysqli->close();
     <title><?php echo $_SESSION['db_column_nome'];?> &bull; Koiso</title>
 </head>
 <body>
+    <!--HEADER (CABEÇARIO DO SITE)-->
     <header>
-        <!--Edit button-->
+        <!--BOTÃO (EDIT)-->
         <a class="btn-header" id="active">Edit</a>
-            <!--EDIT window-->
+
+            <!--JANELA POPUP (EDIT)-->
             <div class="container-popup" id="container">
                 <div class="popup">
-                    <!--Window nav side-->
-                    <div class="popup-nav">
-                        <div class="perfil-topic-nav">
-                            <h2>PROFILE</h2>
-                            <div class="perfil-topic-btn-design-nav">
-                                <div class="perfil-edit-btn-nav">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0858 8.41416C21.8668 7.63311 21.8668 6.36678 21.0858 5.58573L18.4142 2.91416C17.6332 2.13311 16.3668 2.13311 15.5858 2.91416L3.58579 14.9142C3.21071 15.2892 3 15.7979 3 16.3284V19.9999C3 20.5522 3.44772 20.9999 4 20.9999H7.67157C8.20201 20.9999 8.71071 20.7892 9.08579 20.4142L21.0858 8.41416ZM13.8184 7.50999L16.4899 10.1816L7.67157 18.9999H5L5 16.3284L13.8184 7.50999ZM17.9042 8.76735L15.2326 6.09578L17 4.32837L19.6716 6.99994L17.9042 8.76735Z" fill="white"/>
-                                    </svg>
-                                </div>
-                                <div class="perfil-edit-btn-nav">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5C3 3.89543 3.89543 3 5 3H9C10.1046 3 11 3.89543 11 5V9C11 10.1046 10.1046 11 9 11H5C3.89543 11 3 10.1046 3 9V5ZM5 5H9V9H5V5Z" fill="white"/>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 13C3.89543 13 3 13.8954 3 15V19C3 20.1046 3.89543 21 5 21H9C10.1046 21 11 20.1046 11 19V15C11 13.8954 10.1046 13 9 13H5ZM5 15H9V19H5V15Z" fill="white"/>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 3C13.8954 3 13 3.89543 13 5V9C13 10.1046 13.8954 11 15 11H19C20.1046 11 21 10.1046 21 9V5C21 3.89543 20.1046 3 19 3H15ZM15 5H19V9H15V5Z" fill="white"/>
-                                        <path d="M17 21C16.4477 21 16 20.5523 16 20V18H14C13.4477 18 13 17.5523 13 17C13 16.4477 13.4477 16 14 16H16V14C16 13.4477 16.4477 13 17 13C17.5523 13 18 13.4477 18 14V16H20C20.5523 16 21 16.4477 21 17C21 17.5523 20.5523 18 20 18H18V20C18 20.5523 17.5523 21 17 21Z" fill="white"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <!--<div class="linha"></div>-->
-                        <div class="perfil-topic-nav">
-                            <h2>MORE</h2>
-                            <!--Editar perfil-->
-                            <div class="perfil-topic-btn-design-nav">
-                                <div class="perfil-edit-btn-nav">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 11C1 13.2091 2.79086 15 5 15H5.41055L6.40112 19.7052C6.68137 21.0364 8.18011 21.7054 9.35822 21.0252L11 20.0774C11.6188 19.7201 12 19.0598 12 18.3453L12 15.8052C13.4117 16.2828 14.7542 16.9673 15.9815 17.8439L18.605 19.7179C18.8619 19.9014 19.1697 20 19.4854 20C20.3219 20 21 19.3219 21 18.4854V3.51462C21 2.67812 20.3219 2 19.4854 2C19.1697 2 18.8619 2.09864 18.605 2.28212L15.9815 4.1561C13.392 6.00571 10.2894 7 7.10717 7H5C2.79086 7 1 8.79086 1 11ZM17.1439 5.78357L19 4.45781V17.5422L17.1439 16.2164C14.2153 14.1245 10.7062 13 7.10717 13H5C3.89543 13 3 12.1046 3 11C3 9.89543 3.89543 9 5 9H7.10717C10.7062 9 14.2153 7.87546 17.1439 5.78357ZM10 15.2766C9.16442 15.1153 8.3133 15.0235 7.45522 15.004L8.35822 19.2932L10 18.3453V15.2766Z" fill="white"/>
-                                    </svg>
-                                </div>
-                                <div class="perfil-edit-btn-nav">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11.2756 13.5065C10.9983 13.5065 10.7627 13.2794 10.7993 13.0046C10.8196 12.8526 10.8513 12.7447 10.8945 12.5978C10.8956 12.5942 10.8966 12.5905 10.8977 12.5869C10.9053 12.5613 10.9131 12.5344 10.9213 12.5059C11.0204 12.1735 11.1642 11.9051 11.3528 11.7005C11.5414 11.496 11.7683 11.3106 12.0336 11.1444C12.2317 11.0166 12.4091 10.8839 12.5657 10.7465C12.7223 10.6091 12.8469 10.4573 12.9396 10.2911C13.0323 10.1217 13.0787 9.93313 13.0787 9.72539C13.0787 9.50486 13.0259 9.3115 12.9205 9.14531C12.815 8.97912 12.6728 8.85128 12.4938 8.76179C12.318 8.6723 12.1231 8.62756 11.9089 8.62756C11.7012 8.62756 11.5046 8.6739 11.3193 8.76658C11.1339 8.85607 10.9821 8.9903 10.8638 9.16928C10.8251 9.22677 10.7923 9.28887 10.7652 9.35558C10.6641 9.6049 10.459 9.82606 10.19 9.82606H9.22875C8.94771 9.82606 8.71708 9.59328 8.76178 9.31582C8.82867 8.90053 8.96685 8.54327 9.17632 8.24403C9.46715 7.82535 9.85228 7.51374 10.3317 7.3092C10.8111 7.10145 11.34 6.99758 11.9185 6.99758C12.5545 6.99758 13.117 7.10305 13.606 7.31399C14.095 7.52173 14.4785 7.82376 14.7566 8.22006C15.0346 8.61637 15.1737 9.09418 15.1737 9.65348C15.1737 10.0274 15.1113 10.3598 14.9867 10.6506C14.8652 10.9383 14.6943 11.194 14.4737 11.4177C14.2532 11.6382 13.9927 11.838 13.6923 12.0169C13.4398 12.1672 13.2321 12.3238 13.0691 12.4868C12.9093 12.6498 12.7894 12.8383 12.7095 13.0525C12.7037 13.0687 12.6981 13.0851 12.6926 13.1015C12.6167 13.3313 12.4136 13.5065 12.1716 13.5065H11.2756Z" fill="white"/>
-                                        <path d="M11.7219 17.0746C11.4023 17.0746 11.1291 16.9628 10.9022 16.7391C10.6784 16.5121 10.5682 16.2405 10.5714 15.9241C10.5682 15.6109 10.6784 15.3424 10.9022 15.1187C11.1291 14.895 11.4023 14.7831 11.7219 14.7831C12.0256 14.7831 12.2924 14.895 12.5226 15.1187C12.7527 15.3424 12.8693 15.6109 12.8725 15.9241C12.8693 16.135 12.8134 16.3284 12.7047 16.5042C12.5993 16.6767 12.4602 16.8158 12.2876 16.9212C12.1151 17.0235 11.9265 17.0746 11.7219 17.0746Z" fill="white"/>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="white"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="perfil-topic-btn-design-nav">
-                            <a class="perfil-edit-btn-nav" href="logout.php">
-                                <div class="logout-btn">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#c90000" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 3.99998C12 4.55227 11.5523 4.99998 11 4.99998H5L5 19H11C11.5523 19 12 19.4477 12 20C12 20.5523 11.5523 21 11 21H5C3.89543 21 3 20.1046 3 19V4.99998C3 3.89541 3.89543 2.99998 5 2.99998H11C11.5523 2.99998 12 3.4477 12 3.99998Z" fill="#c90000"/>
-                                        <path d="M15.0001 15.5858L17.5858 13.0001H9.00005C8.44776 13.0001 8.00005 12.5524 8.00005 12.0001C8.00005 11.4478 8.44777 11.0001 9.00005 11.0001L17.5858 11.0001L15 8.41426C14.6095 8.02374 14.6095 7.39058 15 7.00005C15.3905 6.60953 16.0237 6.60953 16.4142 7.00005L20.7072 11.293C20.8947 11.4805 21 11.7349 21 12.0001C21 12.2653 20.8947 12.5197 20.7072 12.7072L16.4143 17.0001C16.0238 17.3906 15.3906 17.3906 15.0001 17.0001C14.6096 16.6095 14.6096 15.9764 15.0001 15.5858Z" fill="#c90000"/>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
 
-                    <!--Window content side-->
+
+
+
+
+
+                    <!--MENU DE NAVEGAÇÃO DO POPUP EDIT (LADO ESQUERDO)-->
+                    <nav class="popup-nav">
+                        <ul>
+                            <div class="perfil-topic-nav">
+                                <h2>PROFILE</h2>
+                                <div class="perfil-topic-btn-design-nav">
+                                    <li>
+                                        <a class="perfil-edit-btn-nav" href="#" onclick="mostrarPopup('popupedit1')">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0858 8.41416C21.8668 7.63311 21.8668 6.36678 21.0858 5.58573L18.4142 2.91416C17.6332 2.13311 16.3668 2.13311 15.5858 2.91416L3.58579 14.9142C3.21071 15.2892 3 15.7979 3 16.3284V19.9999C3 20.5522 3.44772 20.9999 4 20.9999H7.67157C8.20201 20.9999 8.71071 20.7892 9.08579 20.4142L21.0858 8.41416ZM13.8184 7.50999L16.4899 10.1816L7.67157 18.9999H5L5 16.3284L13.8184 7.50999ZM17.9042 8.76735L15.2326 6.09578L17 4.32837L19.6716 6.99994L17.9042 8.76735Z" fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="perfil-edit-btn-nav" href="#" onclick="mostrarPopup('popupedit2')">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5C3 3.89543 3.89543 3 5 3H9C10.1046 3 11 3.89543 11 5V9C11 10.1046 10.1046 11 9 11H5C3.89543 11 3 10.1046 3 9V5ZM5 5H9V9H5V5Z" fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 13C3.89543 13 3 13.8954 3 15V19C3 20.1046 3.89543 21 5 21H9C10.1046 21 11 20.1046 11 19V15C11 13.8954 10.1046 13 9 13H5ZM5 15H9V19H5V15Z" fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 3C13.8954 3 13 3.89543 13 5V9C13 10.1046 13.8954 11 15 11H19C20.1046 11 21 10.1046 21 9V5C21 3.89543 20.1046 3 19 3H15ZM15 5H19V9H15V5Z" fill="white"/>
+                                                <path d="M17 21C16.4477 21 16 20.5523 16 20V18H14C13.4477 18 13 17.5523 13 17C13 16.4477 13.4477 16 14 16H16V14C16 13.4477 16.4477 13 17 13C17.5523 13 18 13.4477 18 14V16H20C20.5523 16 21 16.4477 21 17C21 17.5523 20.5523 18 20 18H18V20C18 20.5523 17.5523 21 17 21Z" fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="perfil-topic-nav">
+                                <h2>MORE</h2>
+                                <div class="perfil-topic-btn-design-nav">
+                                    <li>
+                                        <a class="perfil-edit-btn-nav" href="#" onclick="mostrarPopup('popupedit3')">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1 11C1 13.2091 2.79086 15 5 15H5.41055L6.40112 19.7052C6.68137 21.0364 8.18011 21.7054 9.35822 21.0252L11 20.0774C11.6188 19.7201 12 19.0598 12 18.3453L12 15.8052C13.4117 16.2828 14.7542 16.9673 15.9815 17.8439L18.605 19.7179C18.8619 19.9014 19.1697 20 19.4854 20C20.3219 20 21 19.3219 21 18.4854V3.51462C21 2.67812 20.3219 2 19.4854 2C19.1697 2 18.8619 2.09864 18.605 2.28212L15.9815 4.1561C13.392 6.00571 10.2894 7 7.10717 7H5C2.79086 7 1 8.79086 1 11ZM17.1439 5.78357L19 4.45781V17.5422L17.1439 16.2164C14.2153 14.1245 10.7062 13 7.10717 13H5C3.89543 13 3 12.1046 3 11C3 9.89543 3.89543 9 5 9H7.10717C10.7062 9 14.2153 7.87546 17.1439 5.78357ZM10 15.2766C9.16442 15.1153 8.3133 15.0235 7.45522 15.004L8.35822 19.2932L10 18.3453V15.2766Z" fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="perfil-edit-btn-nav" href="#" onclick="mostrarPopup('popupedit4')">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.2756 13.5065C10.9983 13.5065 10.7627 13.2794 10.7993 13.0046C10.8196 12.8526 10.8513 12.7447 10.8945 12.5978C10.8956 12.5942 10.8966 12.5905 10.8977 12.5869C10.9053 12.5613 10.9131 12.5344 10.9213 12.5059C11.0204 12.1735 11.1642 11.9051 11.3528 11.7005C11.5414 11.496 11.7683 11.3106 12.0336 11.1444C12.2317 11.0166 12.4091 10.8839 12.5657 10.7465C12.7223 10.6091 12.8469 10.4573 12.9396 10.2911C13.0323 10.1217 13.0787 9.93313 13.0787 9.72539C13.0787 9.50486 13.0259 9.3115 12.9205 9.14531C12.815 8.97912 12.6728 8.85128 12.4938 8.76179C12.318 8.6723 12.1231 8.62756 11.9089 8.62756C11.7012 8.62756 11.5046 8.6739 11.3193 8.76658C11.1339 8.85607 10.9821 8.9903 10.8638 9.16928C10.8251 9.22677 10.7923 9.28887 10.7652 9.35558C10.6641 9.6049 10.459 9.82606 10.19 9.82606H9.22875C8.94771 9.82606 8.71708 9.59328 8.76178 9.31582C8.82867 8.90053 8.96685 8.54327 9.17632 8.24403C9.46715 7.82535 9.85228 7.51374 10.3317 7.3092C10.8111 7.10145 11.34 6.99758 11.9185 6.99758C12.5545 6.99758 13.117 7.10305 13.606 7.31399C14.095 7.52173 14.4785 7.82376 14.7566 8.22006C15.0346 8.61637 15.1737 9.09418 15.1737 9.65348C15.1737 10.0274 15.1113 10.3598 14.9867 10.6506C14.8652 10.9383 14.6943 11.194 14.4737 11.4177C14.2532 11.6382 13.9927 11.838 13.6923 12.0169C13.4398 12.1672 13.2321 12.3238 13.0691 12.4868C12.9093 12.6498 12.7894 12.8383 12.7095 13.0525C12.7037 13.0687 12.6981 13.0851 12.6926 13.1015C12.6167 13.3313 12.4136 13.5065 12.1716 13.5065H11.2756Z" fill="white"/>
+                                                <path d="M11.7219 17.0746C11.4023 17.0746 11.1291 16.9628 10.9022 16.7391C10.6784 16.5121 10.5682 16.2405 10.5714 15.9241C10.5682 15.6109 10.6784 15.3424 10.9022 15.1187C11.1291 14.895 11.4023 14.7831 11.7219 14.7831C12.0256 14.7831 12.2924 14.895 12.5226 15.1187C12.7527 15.3424 12.8693 15.6109 12.8725 15.9241C12.8693 16.135 12.8134 16.3284 12.7047 16.5042C12.5993 16.6767 12.4602 16.8158 12.2876 16.9212C12.1151 17.0235 11.9265 17.0746 11.7219 17.0746Z" fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="perfil-topic-btn-design-nav">
+                                    <a class="perfil-edit-btn-nav" href="logout.php">
+                                        <div class="logout-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#c90000" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 3.99998C12 4.55227 11.5523 4.99998 11 4.99998H5L5 19H11C11.5523 19 12 19.4477 12 20C12 20.5523 11.5523 21 11 21H5C3.89543 21 3 20.1046 3 19V4.99998C3 3.89541 3.89543 2.99998 5 2.99998H11C11.5523 2.99998 12 3.4477 12 3.99998Z" fill="#c90000"/>
+                                                <path d="M15.0001 15.5858L17.5858 13.0001H9.00005C8.44776 13.0001 8.00005 12.5524 8.00005 12.0001C8.00005 11.4478 8.44777 11.0001 9.00005 11.0001L17.5858 11.0001L15 8.41426C14.6095 8.02374 14.6095 7.39058 15 7.00005C15.3905 6.60953 16.0237 6.60953 16.4142 7.00005L20.7072 11.293C20.8947 11.4805 21 11.7349 21 12.0001C21 12.2653 20.8947 12.5197 20.7072 12.7072L16.4143 17.0001C16.0238 17.3906 15.3906 17.3906 15.0001 17.0001C14.6096 16.6095 14.6096 15.9764 15.0001 15.5858Z" fill="#c90000"/>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </ul>
+                    </nav>
+
+                    <!--CONTEUDO DO POPUP EDIT (LADO CENTRAL)-->
                     <section class="popup-edit">
-                        <form class="popup-content" method="POST" action="profile.php">
-                            <div class="div-content1">
-                                <label class="div-content1-pt1" for="">Avatar and Banner</label>
-                                <div class="div-content1-pt2">
-                                    <label class="avatar-input-edit" for="picture-input">CHANGE AVATAR</label>
-                                    <input id="picture-input" type="file" accept="image/*">
-                                    <label class="banner-input-edit" for="banner-input" tabindex="0">CHANGE BANNER</label>
-                                    <input id="banner-input" type="file" accept="image/*">
-                                </div>
-                            </div>
-                            <div class="div-content2">
-                                <label class="div-content2-pt1" for="nickname-input">Nickname</label>
-                                <div class="div-content2-pt2">
-                                    <input type="text" name="nickname-user" id="nickname-input" placeholder="Put your nickname">
-                                </div>
-                            </div>
 
+                        <!--(BOTÃO MENU) NOME, EMAIL, BIO, AVATAR, BANNER, TAGS, CORES-->
+                        <div class="popupsectionative" id="popupedit1">
+                            <form class="popup-content" method="POST" action="profile.php">
+                                <h2 class="popup-content-title">Customize your profile</h2>
 
-                            <?php
-                            if (isset($_POST['novo_apelido'])) {
-                                $novoApelido = $mysqli->real_escape_string($_POST['novo_apelido']);
-                                $idUsuario = $_SESSION['id'];
-
-                                // Atualize o apelido na tabela
-                                $atualizarApelido = "UPDATE db_table_perfil_usuarios SET db_column_apelido = '$novoApelido' WHERE id = $idUsuario";
-                                $mysqli->query($atualizarApelido) or die("Falha na atualização do apelido: " . $mysqli->error);
-
-                                // Recupere o apelido atualizado
-                                $sql = "SELECT db_column_apelido FROM db_table_perfil_usuarios WHERE id = '$idUsuario'";
-                                $result = $mysqli->query($sql);
-
-                                if ($result === false) {
-                                    die("Erro na consulta: " . $mysqli->error);
-                                }
-
-                                // Obtém o valor atualizado da coluna 'db_column_apelido' (se houver resultados)
-                                if ($result->num_rows > 0) {
-                                    $row = $result->fetch_assoc();
-                                    $apelido = $row['db_column_apelido'];
-
-                                    // Exibe a mensagem de sucesso e o apelido atualizado
-                                    echo "Apelido alterado com sucesso! Novo apelido: $apelido";
-                                } else {
-                                    echo "Falha ao recuperar o apelido atualizado.";
-                                }
-                            }
-                            ?>
-
-
-                            <div class="div-content3">
-                                <label class="div-content3-pt1" for="bio-input">Biography</label>
-                                <div class="div-content3-pt2">
-                                    <textarea id="bio-input" name="biografia-input" maxlength="600" rows="10" spellcheck="false" placeholder="Put your bio"></textarea>
-                                </div>
-                            </div>
-                            <div>
-                                <label class="social-medias-tittle">Add a social media</label>
-                                <div class="social-medias-popup">
-                                    <div class="discord">
-                                        <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="">
-                                        <input id="discord-input" type="text" placeholder="Discord">
-                                    </div>
-                                    <div class="github">
-                                        <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png" alt="">
-                                        <input class="github-input" type="text" placeholder="Github">
-                                    </div>
-                                    <div class="instagram">
-                                        <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-social-platform-icon-png-image_6315976.png" alt="">
-                                        <input class="instagram-input" type="text" placeholder="Instagram">
-                                    </div>
-
-                                    <div class="linkedin">
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt="">
-                                        <input class="linkedin-input" type="text" placeholder="Linkedin">
-                                    </div>
-                                    <div class="spotify">
-                                        <img src="https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png" alt="">
-                                        <input class="spotify-input" type="text" placeholder="Spotify">
+                                <!--EDITAR AVATAR E BANNER-->
+                                <div class="div-content1">
+                                    <label class="div-content1-pt1" for="">Avatar and Banner</label>
+                                    <div class="div-content1-pt2">
+                                        <label class="avatar-input-edit" for="picture-input">CHANGE AVATAR</label>
+                                        <input id="picture-input" type="file" accept="image/*">
+                                        <label class="banner-input-edit" for="banner-input" tabindex="0">CHANGE BANNER</label>
+                                        <input id="banner-input" type="file" accept="image/*">
                                     </div>
                                 </div>
-                            </div>
-                            <div>
-                                <label class="add-tags-tittle">Add tags</label>
-                                <div class="add-tags-content">
-                                    <div class="add-tags">
-                                        <input class="add-tags-input" type="text" placeholder="Add a tag at your profile">
+
+                                <!--EDITAR APELIDO-->
+                                <div class="div-content2">
+                                    <label class="div-content2-pt1" for="nickname-input">Nickname</label>
+                                    <div class="div-content2-pt2">
+                                        <input type="text" name="nickname-user" id="nickname-input" placeholder="Put your nickname">
                                     </div>
-                                    <div class="add-tags-edit-row">
-                                        <button class="add-button" href="">Add +</button>
-                                        <p class="add-tags-edit">Programming</p>
-                                        <p class="add-tags-edit">Program</p>
-                                        <p class="add-tags-edit">Programming</p>
-                                        <p class="add-tags-edit">Prmming</p>
-                                        <p class="add-tags-edit">Programming</p>
-                                        <p class="add-tags-edit">Progring</p>
-                                        <p class="add-tags-edit">Prng</p>
-                                    </div>            
+                                    <?php
+                                    if (isset($_POST['novo_apelido'])) {
+                                        $novoApelido = $mysqli->real_escape_string($_POST['novo_apelido']);
+                                        $idUsuario = $_SESSION['id'];
+
+                                        // Atualize o apelido na tabela
+                                        $atualizarApelido = "UPDATE db_table_perfil_usuarios SET db_column_apelido = '$novoApelido' WHERE id = $idUsuario";
+                                        $mysqli->query($atualizarApelido) or die("Falha na atualização do apelido: " . $mysqli->error);
+
+                                        // Recupere o apelido atualizado
+                                        $sql = "SELECT db_column_apelido FROM db_table_perfil_usuarios WHERE id = '$idUsuario'";
+                                        $result = $mysqli->query($sql);
+
+                                        if ($result === false) {
+                                            die("Erro na consulta: " . $mysqli->error);
+                                        }
+
+                                        // Obtém o valor atualizado da coluna 'db_column_apelido' (se houver resultados)
+                                        if ($result->num_rows > 0) {
+                                            $row = $result->fetch_assoc();
+                                            $apelido = $row['db_column_apelido'];
+
+                                            // Exibe a mensagem de sucesso e o apelido atualizado
+                                            echo "Apelido alterado com sucesso! Novo apelido: $apelido";
+                                        } else {
+                                            echo "Falha ao recuperar o apelido atualizado.";
+                                        }
+                                    }
+                                    ?>
                                 </div>
-                            </div>
-                            <div>
-                                <label class="color-selector-title">Profile color</label>
-                                <div id="color-selector-background">
-                                    <input type="color" id="colorPicker">
+
+                                <!--EDITAR BIOGRAFIA-->
+                                <div class="div-content3">
+                                    <label class="div-content3-pt1" for="bio-input">Biography</label>
+                                    <div class="div-content3-pt2">
+                                        <textarea id="bio-input" name="biografia-input" maxlength="600" rows="10" spellcheck="false" placeholder="Put your bio"></textarea>
+                                    </div>
                                 </div>
-                            </div>
-                            <button class="save-btn" type="submit">Save</button>
-                        </form>
+
+                                <!--EDITAR TAGS-->
+                                <div>
+                                    <label class="add-tags-tittle">Add tags</label>
+                                    <div class="add-tags-content">
+                                        <div class="add-tags">
+                                            <input class="add-tags-input" type="text" placeholder="Add a tag at your profile">
+                                        </div>
+                                        <div class="add-tags-edit-row">
+                                            <button class="add-button" href="">Add +</button>
+                                            <p class="add-tags-edit">Programming</p>
+                                            <p class="add-tags-edit">Program</p>
+                                            <p class="add-tags-edit">Programming</p>
+                                            <p class="add-tags-edit">Prmming</p>
+                                            <p class="add-tags-edit">Programming</p>
+                                            <p class="add-tags-edit">Progring</p>
+                                            <p class="add-tags-edit">Prng</p>
+                                        </div>            
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="color-selector-title">Profile color</label>
+                                    <div id="color-selector-background">
+                                        <input type="color" id="colorPicker">
+                                    </div>
+                                </div>
+                                <button class="save-btn" type="submit">Save</button>
+                            </form>
+                        </div>
+
+                        <!--(BOTÃO MENU) LINK E SOCIALMEDIAS-->
+                        <div class="popupsectionative" id="popupedit2">
+                            <form class="popup-content">
+                                <h2 class="popup-content-title">Links and Social Medias</h2> 
+
+                                <!--EDITAR SOCIALMEDIA-->
+                                <div>
+                                    <label class="social-medias-tittle">Add a social media</label>
+                                    <div class="social-medias-popup">
+                                        <div class="discord">
+                                            <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="">
+                                            <input id="discord-input" type="text" placeholder="Discord">
+                                        </div>
+                                        <div class="github">
+                                            <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png" alt="">
+                                            <input class="github-input" type="text" placeholder="Github">
+                                        </div>
+                                        <div class="instagram">
+                                            <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-social-platform-icon-png-image_6315976.png" alt="">
+                                            <input class="instagram-input" type="text" placeholder="Instagram">
+                                        </div>
+
+                                        <div class="linkedin">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt="">
+                                            <input class="linkedin-input" type="text" placeholder="Linkedin">
+                                        </div>
+                                        <div class="spotify">
+                                            <img src="https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png" alt="">
+                                            <input class="spotify-input" type="text" placeholder="Spotify">
+                                        </div>
+                                    </div>
+                                </div>   
+                            </form>
+                        </div>
+                        <div class="popupsectionative" id="popupedit3">
+                            <h2 class="popup-content-title">Updates</h2>
+                        </div>
+                        <div class="popupsectionative" id="popupedit4">
+                            <h2 class="popup-content-title">Help</h2>
+                        </div>
                     </section>
 
-                    <!--Window unactive side-->
-                    <div class="popup-close">
+                    <!--BOTÃO DE FECHAR DO POPUP EDIT (LADO DIREITO)-->
+                    <section class="popup-close">
                         <div id="unactive">
-                        <svg width="24" height="24" viewBox="0" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.6585 4.92888C18.049 4.53836 18.6822 4.53835 19.0727 4.92888C19.4632 5.3194 19.4632 5.95257 19.0727 6.34309L13.4158 12L19.0727 17.6568C19.4632 18.0473 19.4632 18.6805 19.0727 19.071C18.6822 19.4615 18.049 19.4615 17.6585 19.071L12.0016 13.4142L6.34481 19.071C6.3387 19.0771 6.33254 19.0831 6.32632 19.089C5.93455 19.4614 5.31501 19.4554 4.93059 19.071C4.6377 18.7781 4.56447 18.3487 4.71092 17.9876C4.75973 17.8672 4.83296 17.7544 4.93059 17.6568L10.5874 12L4.93059 6.34314C4.54006 5.95262 4.54006 5.31945 4.93059 4.92893C5.32111 4.5384 5.95428 4.5384 6.3448 4.92893L12.0016 10.5857L17.6585 4.92888Z" fill="white"/>
-                        </svg>
+                            <svg width="24" height="24" viewBox="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.6585 4.92888C18.049 4.53836 18.6822 4.53835 19.0727 4.92888C19.4632 5.3194 19.4632 5.95257 19.0727 6.34309L13.4158 12L19.0727 17.6568C19.4632 18.0473 19.4632 18.6805 19.0727 19.071C18.6822 19.4615 18.049 19.4615 17.6585 19.071L12.0016 13.4142L6.34481 19.071C6.3387 19.0771 6.33254 19.0831 6.32632 19.089C5.93455 19.4614 5.31501 19.4554 4.93059 19.071C4.6377 18.7781 4.56447 18.3487 4.71092 17.9876C4.75973 17.8672 4.83296 17.7544 4.93059 17.6568L10.5874 12L4.93059 6.34314C4.54006 5.95262 4.54006 5.31945 4.93059 4.92893C5.32111 4.5384 5.95428 4.5384 6.3448 4.92893L12.0016 10.5857L17.6585 4.92888Z" fill="white"/>
+                            </svg>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
 
-        <!--SHARE-->
+        <!--BOTÃO (SHARE)-->
         <a class="btn-header2" id="active2">Share</a>
             <div class="container-popup2" id="container2">
                 <div class="popup2">
@@ -247,6 +289,17 @@ $mysqli->close();
                 </div>
             </div>
     </header>
+
+
+
+
+
+
+
+
+
+
+
 
     <main>
         <!--POPUP DE AVISO
@@ -338,5 +391,6 @@ $mysqli->close();
     <script src="scriptsjs/edit-pop-up.js"></script>
     <script src="scriptsjs/input-pic.js"></script>
     <script src="scriptsjs/share-link.js"></script>
+    <script src="scriptsjs/secoes-edit-pop-up.js"></script>
 </body>
 </html>

@@ -241,6 +241,13 @@ header{
     gap: 18px;
 }
 
+.popup-content-title{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
 
 .div-content1{
     display: flex;
@@ -821,4 +828,30 @@ header{
 
 #botao button:hover{
     background-color: #504fbb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.popupsectionative{
+    display: none;
+}
+
+.cabecadepinto{
+    background-color: #6c6aad;
+    font-family: Arial, Helvetica, sans-serif;
 }
