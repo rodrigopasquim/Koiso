@@ -178,6 +178,17 @@ $mysqli->close();
                                     ?>
                                 </div>
 
+                                <!--EDITAR NOME DE USUÁRIO-->
+                                <div class="div-content5">
+                                    <label class="div-content5-pt1" for="username-input">Username&nbsp;
+                                        <svg width="22px" height="22px" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M16 12H17.4C17.7314 12 18 12.2686 18 12.6V19.4C18 19.7314 17.7314 20 17.4 20H6.6C6.26863 20 6 19.7314 6 19.4V12.6C6 12.2686 6.26863 12 6.6 12H8M16 12V8C16 6.66667 15.2 4 12 4C8.8 4 8 6.66667 8 8V12M16 12H8" stroke="#d13131" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </label>
+                                    <div class="div-content5-pt2">
+                                        <input type="text" name="nickname-user" id="username-input" placeholder="<?php echo $_SESSION['db_column_nome'];?>" readonly>
+                                        
+                                    </div>
+                                </div>
+
                                 <!--EDITAR BIOGRAFIA-->
                                 <div class="div-content3">
                                     <label class="div-content3-pt1" for="bio-input">Biography</label>
@@ -190,18 +201,31 @@ $mysqli->close();
                                 <div>
                                     <label class="add-tags-tittle">Add tags</label>
                                     <div class="add-tags-content">
-                                        <div class="add-tags">
+                                        <!--<div class="add-tags">
                                             <input class="add-tags-input" type="text" placeholder="Add a tag at your profile">
-                                        </div>
-                                        <div class="add-tags-edit-row">
                                             <button class="add-button" href="">Add +</button>
-                                            <p class="add-tags-edit">Programming</p>
-                                            <p class="add-tags-edit">Program</p>
-                                            <p class="add-tags-edit">Programming</p>
-                                            <p class="add-tags-edit">Prmming</p>
-                                            <p class="add-tags-edit">Programming</p>
-                                            <p class="add-tags-edit">Progring</p>
-                                            <p class="add-tags-edit">Prng</p>
+                                        </div>-->
+                                        <div class="add-tags-edit-row">
+
+                                            <div class="add-tags-edit" onclick="toggle_adds_tags(this)">Teacher</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Gym</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Church</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Gamer</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Designer</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Lover</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Student</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Reader</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Writer</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Musician</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Traveler</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Vegan</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Languages student</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Animals</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Healthy life</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Photographer</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Photos</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Music</div>
+                                            <div class="add-tags-edit"onclick="toggle_adds_tags(this)">Friendly</div>
                                         </div>            
                                     </div>
                                 </div>
@@ -246,7 +270,8 @@ $mysqli->close();
                                             <input class="spotify-input" type="text" placeholder="Spotify">
                                         </div>
                                     </div>
-                                </div>   
+                                </div>
+                                <button class="save-btn" type="submit">Save</button> 
                             </form>
                         </div>
                         <div class="popupsectionative" id="popupedit3">
@@ -376,10 +401,10 @@ $mysqli->close();
                         <textarea class="biografia-text" name="biografia" maxlength="600" rows="10" spellcheck="false" disabled><?php echo $biografia;?></textarea>
                     </div>
                     <div>
-                        <p id="tags">Programming</p>
-                        <p id="tags">Dev-Ops</p>
-                        <p id="tags">Front-end</p>
-                        <p id="tags">Gym</p>
+                        <div id="tags">Programming</div>
+                        <div id="tags">Dev-Ops</div>
+                        <div id="tags">Front-end</div>
+                        <div id="tags">Gym</div>
                     </div>
                 </div>
                 <div class="sub-div-direita">

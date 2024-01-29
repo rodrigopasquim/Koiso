@@ -276,7 +276,7 @@ header{
 
 
 
-
+/*Nickname*/
 .div-content2{
     display: flex;
     flex-direction: column;
@@ -294,11 +294,8 @@ header{
     padding: 10px 0 10px 10px;
     font-size: 11pt;
     border-radius: 10px 10px 0 0;
-
 }
 
-
-/*Nickname*/
 .div-content2-pt2{
     display: flex;
     height:  auto;
@@ -324,7 +321,57 @@ header{
 }
 
 
+/*Nome de usuario*/
+.div-content5{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    border-radius: auto;
+}
 
+.div-content5-pt1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 10px 0 10px 10px;
+    font-size: 11pt;
+    border-radius: 10px 10px 0 0;
+}
+
+.div-content5-pt2{
+    display: flex;
+    height:  auto;
+    border-radius: 0 0 10px 10px;
+}
+
+#username-input{
+    padding: 0 20px 0 20px;
+    background-color: #0a0a0a;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 11pt;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+}
+
+#username-input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#username-input::placeholder{
+    color: #ffffff;
+}
+
+
+
+
+/*Biografia*/
 .div-content3{
     display: flex;
     flex-direction: column;
@@ -344,7 +391,6 @@ header{
     border-radius: 10px 10px 0 0;
 }
 
-/*Biografia*/
 .div-content3-pt2{
     display: flex;
     height:  auto;
@@ -644,12 +690,15 @@ header{
     height: 25px;
     background-color: transparent;
     color: #605de0;
-    border: 2px solid #605de0;
-    border-radius: 10px;
-    padding: 2px 8px 2px 8px;
+    opacity: 50%;
+    border: 1px solid #605de0;
+    border-radius: 50px;
+    padding: 4px 8px;
     margin: 0 0 4px 0;
-    font-size: 10pt;
+    font-size: 12px;
     font-family: 'Inter', sans-serif;
+    cursor: default;
+    user-select: none;
 }
 
 .add-button{
@@ -855,3 +904,21 @@ header{
     background-color: #6c6aad;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.selected_tag {
+    opacity: 100%; /* Cor de fundo quando marcada */
+  }
