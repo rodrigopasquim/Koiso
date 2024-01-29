@@ -417,5 +417,6 @@ $mysqli->close();
     <script src="scriptsjs/input-pic.js"></script>
     <script src="scriptsjs/share-link.js"></script>
     <script src="scriptsjs/secoes-edit-pop-up.js"></script>
+    <script src="scriptsjs/add-tags.js"></script>
 </body>
 </html>
