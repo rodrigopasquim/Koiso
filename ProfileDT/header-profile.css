@@ -715,6 +715,22 @@ header{
 }
 
 
+.updates-link-to-discord-text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 10px 0 10px 10px;
+    font-size: 11pt;
+    border-radius: 10px;
+}
+
+.updates-link-to-discord a{
+    padding: 0 0 0 10px;
+}
+
+
 
 
 

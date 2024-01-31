@@ -28,10 +28,7 @@ if ($result->num_rows > 0) {
 
 // Feche a conexão com o banco de dados
 $mysqli->close();
-
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -127,7 +124,7 @@ $mysqli->close();
 
                         <!--(BOTÃO MENU) NOME, EMAIL, BIO, AVATAR, BANNER, TAGS, CORES-->
                         <div class="popupsectionative" id="popupedit1">
-                            <form class="popup-content" method="POST" action="profile.php">
+                            <form class="popup-content" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                                 <h2 class="popup-content-title">Customize your profile</h2>
 
                                 <!--EDITAR AVATAR E BANNER-->
@@ -147,35 +144,6 @@ $mysqli->close();
                                     <div class="div-content2-pt2">
                                         <input type="text" name="nickname-user" id="nickname-input" placeholder="Put your nickname">
                                     </div>
-                                    <?php
-                                    if (isset($_POST['novo_apelido'])) {
-                                        $novoApelido = $mysqli->real_escape_string($_POST['novo_apelido']);
-                                        $idUsuario = $_SESSION['id'];
-
-                                        // Atualize o apelido na tabela
-                                        $atualizarApelido = "UPDATE db_table_perfil_usuarios SET db_column_apelido = '$novoApelido' WHERE id = $idUsuario";
-                                        $mysqli->query($atualizarApelido) or die("Falha na atualização do apelido: " . $mysqli->error);
-
-                                        // Recupere o apelido atualizado
-                                        $sql = "SELECT db_column_apelido FROM db_table_perfil_usuarios WHERE id = '$idUsuario'";
-                                        $result = $mysqli->query($sql);
-
-                                        if ($result === false) {
-                                            die("Erro na consulta: " . $mysqli->error);
-                                        }
-
-                                        // Obtém o valor atualizado da coluna 'db_column_apelido' (se houver resultados)
-                                        if ($result->num_rows > 0) {
-                                            $row = $result->fetch_assoc();
-                                            $apelido = $row['db_column_apelido'];
-
-                                            // Exibe a mensagem de sucesso e o apelido atualizado
-                                            echo "Apelido alterado com sucesso! Novo apelido: $apelido";
-                                        } else {
-                                            echo "Falha ao recuperar o apelido atualizado.";
-                                        }
-                                    }
-                                    ?>
                                 </div>
 
                                 <!--EDITAR NOME DE USUÁRIO-->
@@ -276,9 +244,29 @@ $mysqli->close();
                         </div>
                         <div class="popupsectionative" id="popupedit3">
                             <h2 class="popup-content-title">Updates</h2>
+                            <div class="updates-link-to-discord">
+                                <p class="updates-link-to-discord-text">Stay up to date with our updates on discord</p>
+                                <a href="https://discord.gg/skNHSjaEva">
+                                    <svg margin-top="40px" width="30px" height="30px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#7289da">
+                                        <path d="M5.5 16c5 2.5 8 2.5 13 0M15.5 17.5l1 2s4.171-1.328 5.5-3.5c0-1 .53-8.147-3-10.5-1.5-1-4-1.5-4-1.5l-1 2h-2" stroke="#7289da" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M8.528 17.5l-1 2s-4.171-1.328-5.5-3.5c0-1-.53-8.147 3-10.5 1.5-1 4-1.5 4-1.5l1 2h2" stroke="#7289da" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M8.5 14c-.828 0-1.5-.895-1.5-2s.672-2 1.5-2 1.5.895 1.5 2-.672 2-1.5 2zM15.5 14c-.828 0-1.5-.895-1.5-2s.672-2 1.5-2 1.5.895 1.5 2-.672 2-1.5 2z" stroke="#7289da" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                         <div class="popupsectionative" id="popupedit4">
                             <h2 class="popup-content-title">Help</h2>
+                            <div class="updates-link-to-discord">
+                                <p class="updates-link-to-discord-text">Get help and suport on discord</p>
+                                <a href="https://discord.gg/skNHSjaEva">
+                                    <svg margin-top="40px" width="30px" height="30px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#7289da">
+                                        <path d="M5.5 16c5 2.5 8 2.5 13 0M15.5 17.5l1 2s4.171-1.328 5.5-3.5c0-1 .53-8.147-3-10.5-1.5-1-4-1.5-4-1.5l-1 2h-2" stroke="#7289da" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M8.528 17.5l-1 2s-4.171-1.328-5.5-3.5c0-1-.53-8.147 3-10.5 1.5-1 4-1.5 4-1.5l1 2h2" stroke="#7289da" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M8.5 14c-.828 0-1.5-.895-1.5-2s.672-2 1.5-2 1.5.895 1.5 2-.672 2-1.5 2zM15.5 14c-.828 0-1.5-.895-1.5-2s.672-2 1.5-2 1.5.895 1.5 2-.672 2-1.5 2z" stroke="#7289da" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </section>
 
