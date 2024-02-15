@@ -103,5 +103,5 @@ https://github.com/link-do-video-introdutório
 ## Status 🚦
 
 <h4 align="center"> 
-	🚧  Koiso In development...  🚧
+	🚧  Koiso is in development...  🚧
 </h4>
