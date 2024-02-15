@@ -80,6 +80,7 @@ https://github.com/link-do-video-introdutório
 
 </p>
 
+<!--
 ## How to Contribute 🚀
 
 1. **Fork the Repository:**
@@ -99,6 +100,8 @@ https://github.com/link-do-video-introdutório
   - Create a "users" document in Firebase and then create the Google login option in Firebase Authentication
 
 [Detailed installation here](./docs//developer-guide/en-us/structure.md)
+-->
+
 
 ## Status 🚦
 
