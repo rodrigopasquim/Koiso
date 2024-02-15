@@ -51,12 +51,12 @@ npm run build
 
 ## 🛠 Technologies
 
-- [HTML](https://vuejs.org)
-- [CSS](https://vuejs.org)
-- [Java Script](https://nuxt.com)
+- [HTML](https://www.w3schools.com/html)
+- [CSS](https://www.w3schools.com/css)
+- [Java Script](https://www.javascript.com)
 - [Tailwind css](https://tailwindcss.com)
-- [PHP](https://pinia.vuejs.org)
-- [MySQL](https://sass-lang.com)
+- [PHP](https://www.php.net)
+- [MySQL](https://www.mysql.com)
 
 ## Database and tools 🗃️
 
@@ -75,7 +75,7 @@ npm run build
 
 
 
-https://github.com/Luizboaventura1/fastdevelopment/assets/122652168/d68f8fd6-cd29-4cc6-929d-339dc4155a08
+https://github.com/link-do-video-introdutório
 
 
 </p>
@@ -103,5 +103,5 @@ https://github.com/Luizboaventura1/fastdevelopment/assets/122652168/d68f8fd6-cd2
 ## Status 🚦
 
 <h4 align="center"> 
-	🚧  Koiso 🚀 In development...  🚧
+	🚧  Koiso In development...  🚧
 </h4>
