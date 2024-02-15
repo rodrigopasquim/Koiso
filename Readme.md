@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/logo-fastdevelopment.png" width="150">
+  <img src=".assets/koiso-logo.png" width="150">
 </div>
 
 <h1 align="center">Koiso</h1>
