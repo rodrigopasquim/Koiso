@@ -8,7 +8,7 @@
 
 ## Deploy 🚀
 
-[click here]()
+[link]()
 
 ### Developer guide 📚
 
