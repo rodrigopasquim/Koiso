@@ -112,7 +112,7 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
             <div class="ou">
                 <div class="ou-row"></div><p>&nbsp or &nbsp</p><div class="ou-row"></div>
             </div>
-            <a class="registro-atalho" href="http://localhost/registerDT/register.php">Create your account</a>
+            <a class="registro-atalho" href="http://localhost/register/register.php">Create your account</a>
         </form>
     </main>  
 
@@ -142,7 +142,7 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
                     <p class="title-topic-right">Navegation</p>
                     <div class="text-topic-right">
                         <a class="words-rodape" href="http://localhost/InicialpageDT/inicialpage.html">Inicial Page</a>
-                        <a class="words-rodape" href="http://localhost/registerDT/register.php">Sign In Koiso</a>
+                        <a class="words-rodape" href="http://localhost/register/register.php">Sign In Koiso</a>
                     </div>
                 </div>
             </div>
