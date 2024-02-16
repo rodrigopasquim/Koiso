@@ -75,7 +75,7 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
 </head>
 <body>
     <header class="cabecalho">
-        <a class="cabecalho-logo-div" href="http://localhost/InicialpageDT/inicialpage.html">
+        <a class="cabecalho-logo-div" href="http://localhost/Inicialpage/inicialpage.html">
             <img class="cabecalho-logo" src="https://i.imgur.com/1LdRVjc.png" alt="">
             <div class="cabecalho-logo-texts">
                 <div class="cabecalho-text-logo">Koiso</div>
@@ -83,7 +83,6 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
         </a>
         <div></div>
     </header>
-     
     <main>
         <!--POPUP DE AVISO-->
         <div id="modificacoes-salvas">
