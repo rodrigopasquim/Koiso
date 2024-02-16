@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/rodrigopasquim/Koiso/blob/main/assets/koiso-logo.png" width="150">
+  <img src="assets/img/koiso-logo.png" width="150">
 </div>
 
 <h1 align="center">Koiso</h1>
