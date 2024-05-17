@@ -36,8 +36,8 @@ $mysqli->close();
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main-profile.css">
-    <link rel="stylesheet" href="header-profile.css">
+    <link rel="stylesheet" href="style/main-profile.css">
+    <link rel="stylesheet" href="style/header-profile.css">
     <link rel="shortcut icon" href="https://i.imgur.com/1LdRVjc.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -400,11 +400,11 @@ $mysqli->close();
             </div>
         </div>
     </main>
-    <script src="scriptsjs/background-color.js"></script>
-    <script src="scriptsjs/edit-pop-up.js"></script>
-    <script src="scriptsjs/input-pic.js"></script>
-    <script src="scriptsjs/share-link.js"></script>
-    <script src="scriptsjs/secoes-edit-pop-up.js"></script>
-    <script src="scriptsjs/add-tags.js"></script>
+    <script src="scripts/background-color.js"></script>
+    <script src="scripts/edit-pop-up.js"></script>
+    <script src="scripts/input-pic.js"></script>
+    <script src="scripts/share-link.js"></script>
+    <script src="scripts/secoes-edit-pop-up.js"></script>
+    <script src="scripts/add-tags.js"></script>
 </body>
 </html>

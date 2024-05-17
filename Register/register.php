@@ -71,9 +71,9 @@ $mysqli->close();
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="header-register.css">
-    <link rel="stylesheet" href="main-register.css">
-    <link rel="stylesheet" href="footer-register.css">
+    <link rel="stylesheet" href="style/header-register.css">
+    <link rel="stylesheet" href="style/main-register.css">
+    <link rel="stylesheet" href="style/footer-register.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://i.imgur.com/1LdRVjc.png" type="image/x-icon">
