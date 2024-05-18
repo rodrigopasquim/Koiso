@@ -24,36 +24,9 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
 
         header("Location: http://localhost/ProfileDT/profile.php");
     } else {
-        // Login incorreto, acione a animação JavaScript
-        echo '<script>
-            const rectangle = document.getElementById("modificacoes-salvas");
-            let position = -50;
-            const speed = 2;
-
-            function moveDownAndUp() {
-                const interval = setInterval(function () {
-                    position += speed;
-                    rectangle.style.top = position + "px";
-
-                    if (position >= 30) {
-                        clearInterval(interval);
-
-                        setTimeout(function () {
-                            const returnInterval = setInterval(function () {
-                                position -= speed;
-                                rectangle.style.top = position + "px";
-
-                                if (position <= -50) {
-                                    clearInterval(returnInterval);
-                                }
-                            }, 10);
-                        }, 4000);
-                    }
-                }, 10);
-            }
-            moveDownAndUp();
-        </script>';
-        echo "password wrong"; // Aqui você pode personalizar a mensagem de erro
+        echo"<script>
+                abaixar_popup();
+            </script>";
     }
 }
 ?>
@@ -85,7 +58,7 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
     </header>
     <main>
         <!--POPUP DE AVISO-->
-        <div id="modificacoes-salvas">
+        <div id="informacoes_incorretas">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.002 22C17.5248 22 22.002 17.5228 22.002 12C22.002 6.47715 17.5248 2 12.002 2C6.47911 2 2.00195 6.47715 2.00195 12C2.00195 17.5228 6.47911 22 12.002 22ZM9.91617 8.5C9.52565 8.10948 8.89248 8.10948 8.50196 8.5C8.11143 8.89053 8.11143 9.52369 8.50196 9.91422L10.5877 12L8.50195 14.0858C8.11143 14.4763 8.11143 15.1095 8.50195 15.5C8.89248 15.8905 9.52564 15.8905 9.91616 15.5L12.002 13.4142L14.0877 15.5C14.4783 15.8905 15.1114 15.8905 15.502 15.5C15.8925 15.1095 15.8925 14.4763 15.502 14.0858L13.4162 12L15.502 9.91422C15.8925 9.52369 15.8925 8.89053 15.502 8.5C15.1114 8.10948 14.4783 8.10948 14.0877 8.5L12.002 10.5858L9.91617 8.5Z" fill="currentColor"/>
             </svg>
@@ -103,7 +76,7 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
                 <label for="password"></label>
                 <input type="password" name="senha" placeholder="Password" require>
             </div>
-            <button type="submit" class="submit-login" onclick="showPopup()">Login</button>  
+            <button type="submit" class="submit-login">Login</button>  
             <div class="forgot-password">
                 <p>Forgot your password? &nbsp</p>
                 <a href="">Recover</a>

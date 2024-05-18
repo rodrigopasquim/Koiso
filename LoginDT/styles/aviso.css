@@ -1,5 +1,5 @@
 /*CAIXA DE DIALOGO SALVO/INCORRETO*/
-#modificacoes-salvas{
+#informacoes_incorretas{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,6 +17,6 @@
     z-index: 999999999;
 }
 
-#modificacoes-salvas svg{
+#informacoes_incorretas svg{
     color: rgb(206, 43, 43);
 }
