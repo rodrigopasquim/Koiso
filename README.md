@@ -6,7 +6,7 @@
 
 <p align="center">Koiso é um perfil totalmente personalizável, onde o usuário pode definir sua própria foto de perfil, escrever uma biografia, adicionar links e conectar suas redes sociais. Seu público-alvo são gamers e usuários do Discord, sendo descrito como uma extensão ou um meio de fácil acesso a informações que normalmente não estariam visíveis nos perfis dessas plataformas, já que possuem limitações em relação a esses detalhes.</p>
 
-## Get start at Koiso 🚀
+### Get start at Koiso 🚀
 [click here]()
 
 ### Developering by 📚
@@ -16,27 +16,33 @@
 [click here]()
 
 </p>
+</p>
 
 ## 🛠 Technologies
-- [HTML](https://www.w3schools.com/html)
-- [CSS](https://www.w3schools.com/css)
-- [Java Script](https://www.javascript.com)
-- [Tailwind css](https://tailwindcss.com)
-- [PHP](https://www.php.net)
-- [MySQL](https://www.mysql.com)
+- [HTML]
+- [CSS]
+- [Java Script]
+- [Tailwind css]
+- [PHP]
+- [MySQL]
+- [Tailwind]
+- [Figma]
 
+</p>
 </p>
 
 ## License 📜
 - [MIT](./LICENSE)
 
 </p>
+</p>
 
 ## Social medias
-- Discord
-- Instagram
-- X
+[Discord]()
+[Instagram]()
+[X]()
 
+</p>
 </p>
 
 ## Status 🚦
