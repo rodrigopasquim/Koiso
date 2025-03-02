@@ -6,19 +6,19 @@
 
 <p align="center">Koiso é um perfil totalmente personalizável, onde o usuário pode definir sua própria foto de perfil, escrever uma biografia, adicionar links e conectar suas redes sociais. Seu público-alvo são gamers e usuários do Discord, sendo descrito como uma extensão ou um meio de fácil acesso a informações que normalmente não estariam visíveis nos perfis dessas plataformas, já que possuem limitações em relação a esses detalhes.</p>
 
-### Get start at Koiso 🚀
+### Get start at Koiso 
 [click here]()
 
-### Developering by 📚
+### Developering by 
 [click here]()
 
-### User guide 📖
+### User guide 
 [click here]()
 
 </p>
 </p>
 
-## 🛠 Technologies
+## Technologies Stack 🛠
 - HTML
 - CSS
 - Java Script
@@ -38,9 +38,9 @@
 </p>
 
 ## Social medias
-<p>DISCORD</p>
-<p>INSTAGRAM</p>
-<p>X</p>
+[Discord]()
+[Instagram]()
+[X]()
 
 
 </p>
