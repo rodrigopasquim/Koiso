@@ -32,7 +32,7 @@
 </p>
 
 ## License 📜
-- [MIT](./LICENSE)
+[MIT](./LICENSE)
 
 </p>
 </p>
