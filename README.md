@@ -20,7 +20,7 @@
 </p>
 </p>
 
-## Technologies Stack 🛠
+## Technologies Stack 
 - HTML
 - CSS
 - Java Script
@@ -33,7 +33,7 @@
 </p>
 </p>
 
-## License 📜
+## License 
 [MIT](./LICENSE)
 
 </p>
@@ -48,7 +48,7 @@
 </p>
 </p>
 
-## Status 🚦
+## Status 
 
 <h4 align="center"> 
 	🚧  Koiso is in development...  🚧
