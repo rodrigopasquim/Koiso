@@ -4,53 +4,20 @@
 
 <h1 align="center">Koiso</h1>
 
-<p align="center">Koiso is a fully customizable profile, developed in HTML, CSS, JavaScript, Bootstrap, PHP and MySql. Choose your own profile photo, write your biography, add links or connect social networks.</p>
+<p align="center">Koiso é um perfil totalmente personalizável, onde o usuário pode definir sua própria foto de perfil, escrever uma biografia, adicionar links e conectar suas redes sociais. Seu público-alvo são gamers e usuários do Discord, sendo descrito como uma extensão ou um meio de fácil acesso a informações que normalmente não estariam visíveis nos perfis dessas plataformas, já que possuem limitações em relação a esses detalhes.</p>
 
-## Deploy 🚀
+## Get start at Koiso 🚀
+[click here]()
 
-[link]()
-
-### Developer guide 📚
-
-[click here](./docs/developer-guide)
+### Developering by 📚
+[click here]()
 
 ### User guide 📖
+[click here]()
 
-[click here](./docs/user-guide/Introdution.md)
-
-## Get started with a few commands ⚙️
-
-install dependencies
-
-```bash
-npm install
-```
-
-Run project
-
-```bash
-npm run dev
-```
-
-Make the build
-
-```bash
-npm run build
-```
-
-### Features 🌟
-
-- [x] Login system
-- [ ] Kanban board
-- [ ] Workspace
-- [ ] addition of members
-
-## License 📜
-
-- [MIT](./LICENSE)
+</p>
 
 ## 🛠 Technologies
-
 - [HTML](https://www.w3schools.com/html)
 - [CSS](https://www.w3schools.com/css)
 - [Java Script](https://www.javascript.com)
@@ -58,50 +25,19 @@ npm run build
 - [PHP](https://www.php.net)
 - [MySQL](https://www.mysql.com)
 
-## Database and tools 🗃️
+</p>
 
-- [Firebase](https://firebase.google.com/?hl=pt-br)
-- [Figma](www.figma.com)
-
-## Libs 📚
-
-- [Motion vueuse](https://motion.vueuse.org)
-- [Prime Vue](https://primevue.org)
-- [Vue draggable](https://sortablejs.github.io/Vue.Draggable/#/simple)
-
-## Interface 🎨
-
-<p align="center">
-
-
-
-https://github.com/link-do-video-introdutório
-
+## License 📜
+- [MIT](./LICENSE)
 
 </p>
 
-<!--
-## How to Contribute 🚀
+## Social medias
+- Discord
+- Instagram
+- X
 
-1. **Fork the Repository:**
-   - Fork this repository by clicking the "Fork" button in the top right corner of this page. This will create a copy of the repository in your GitHub account.
-
-2. **Clone the Repository:**
-   - Clone the forked repository to your local development environment.
-
-   ```bash
-   git clone git@github.com:Luizboaventura1/fastdevelopment.git
-   cd fastdevelopment
-
-3. **Create your firebase project**
-  - put the environment variables in the `.env.template` example.
-  
-4. **Firebase configuration**
-  - Create a "users" document in Firebase and then create the Google login option in Firebase Authentication
-
-[Detailed installation here](./docs//developer-guide/en-us/structure.md)
--->
-
+</p>
 
 ## Status 🚦
 
