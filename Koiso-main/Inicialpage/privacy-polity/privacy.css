@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*Scrollbar do site completo*/
+::-webkit-scrollbar{
+    background-color: #1d1d1d;
+    width: 10px;
+    border-radius: 0 0px 0px 0;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #5b5b5b;
+    border-radius: 0px;
+}
+
+body{
+    font-size: 100%;
+    background-color: #000000;
+    scroll-behavior: smooth;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-written{
+    display: flex;
+    flex-direction: column;
+    margin: 200px 0 100px 0;
+    align-items: flex-start;
+    width: 50vw;
+}
+
+
+.title-1{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.title-2{
+    color: white;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.text{
+    color: white;
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+}
+
+

@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*Scrollbar do site completo*/
+::-webkit-scrollbar{
+    background-color: #1d1d1d;
+    width: 10px;
+    border-radius: 0 0px 0px 0;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #5b5b5b;
+    border-radius: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    background-color: #000000;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+/*CARD*/
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+}
+
+.card h1{
+    font-family: 'Inter', sans-serif;
+    color: #708df7;
+    font-size: 45px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+
+/*INPUTS DO FORM*/
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    color: #a3a3a3;
+    margin: 20px 0 0 0;
+}
+
+.textfield input{
+    height: 50px;
+    width: 370px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 15px;
+    background: #17191b;
+    font-size: 12pt;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    color: #a3a3a3;
+    transition: all 0.5s ease;
+}
+
+.textfield input::-ms-reveal {
+    color: white;
+    border: 1px solid transparent;
+    filter: invert(60%);
+}
+
+.textfield input:focus{
+    transition: all 0.5s ease;
+    border: 2px solid #708df7;
+}
+
+
+/*LOGIN ERRADO*/
+.login-wrong{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 7px 0 0 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 11pt;
+    color: rgb(182, 0, 0);
+}
+
+
+/*BOTÃO DE LOGIN*/
+.submit-login{
+    height: 50px;
+    width: 370px;
+    margin: 25px 0 0 0;
+    background-color: #708df7;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.submit-login:hover{
+    background-color: #576ec2;
+    color: white;
+}
+
+
+/*LINK DE IR PARA PAGINA DE RECUPERAR SENHA*/
+.forgot-password{
+    display: flex;
+    margin-top: 10px;
+}
+
+.forgot-password p{
+    color: #a3a3a3;
+    font-family: 'Inter', sans-serif;
+    font-size: 11.5pt;
+    transition: 0.2s;
+}
+
+.forgot-password a{
+    color: #708df7;
+    font-family: 'Inter', sans-serif;
+    font-size: 11.5pt;
+    transition: 0.2s;
+}
+
+.forgot-password a:hover{
+    color: #576ec2;
+}
+
+
+/*DIVISOR LOGIN E REGISTRO ATALHO*/
+.ou{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 0 0;
+}
+
+.ou p{
+    color: #323232;
+    font-family: 'Inter', sans-serif;
+}
+
+.ou-row{
+    border-top: 1px solid #323232;
+    width: 150px;
+}
+
+/*REGISTRO ATALHO*/
+.registro-atalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 370px;
+    margin: 40px 0 0 0;
+    background-color: #2a2c2e;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.registro-atalho:hover{
+    background-color: #383b3d;
+}

@@ -1,0 +1,69 @@
+/**/
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px 0 120px 0;
+    background-color: #0a0a0a;
+    border-top: 0.1px solid #242424;
+    gap: 10%;
+}
+
+/*palavras no rodapé*/
+.left-rodape{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.words-rodape{
+    color: #9c9c9c;
+    font-family: 'Inter', sans-serif;
+}
+
+.socialmedias-rodape-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.right-rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about-title-topic{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.about-text-topic{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #9c9c9c;
+}
+
+
+/*Botão de ir ao topo*/
+#ScrollTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 35px;
+    bottom: 35px;
+    text-decoration: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
