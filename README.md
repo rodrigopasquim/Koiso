@@ -34,7 +34,7 @@
 </p>
 
 ## License 
-[MIT](./LICENSE)
+[click here](./LICENSE)
 
 </p>
 </p>
