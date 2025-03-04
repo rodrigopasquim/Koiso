@@ -8,13 +8,15 @@
 
 <p align="center">Koiso is a fully customizable profile where users can set their own profile picture, write a biography, add links, and connect their social media accounts. Its target audience consists of gamers and Discord users, being described as an extension or an easy way to access information that would normally not be visible on profiles within these platforms, as they have limitations regarding these details.</p>
 
-### Get start at Koiso 
-[click here]()
-
-### Developering by 
+### Get start at Koiso
+Explore, personalize e torne seu perfil verdadeiramente único!
 [click here]()
 
 ### User guide 
+<p>Este guia ajudará você a configurar e personalizar seu perfil, explorando todas as funcionalidades disponíveis para tornar sua página única.</p>
+[click here]()
+
+### Developering by
 [click here]()
 
 </p>
